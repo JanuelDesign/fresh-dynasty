@@ -568,7 +568,119 @@
                 justify-content: center;
             }
         }
+
+        /* Artists Section - FONDO NEGRO */
+        .artists-section {
+            background: #000000;
+            padding: 6rem 5%;
+            border-top: 1px solid #222;
+        }
+
+        .artists-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .artists-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .artist-card {
+            background: #111111;
+            border-radius: 24px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .artist-card:hover {
+            transform: translateY(-8px);
+            border-color: #333;
+            box-shadow: 0 20px 40px rgba(255,255,255,0.05);
+        }
+
+        .artist-avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .artist-card:hover .artist-avatar {
+            border-color: #555;
+            transform: scale(1.05);
+        }
+
+        .artist-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .artist-role {
+            font-size: 0.9rem;
+            color: #9c9c9c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+
+        .artist-desc {
+            font-size: 1rem;
+            color: #aaaaaa;
+            line-height: 1.7;
+            margin-bottom: 1.8rem;
+            max-width: 320px;
+        }
+
+        .artist-instagram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #000000;
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid #ffffff;
+            cursor: pointer;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .artist-instagram-btn:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+        }
+
+        .artist-instagram-btn i {
+            font-size: 1.2rem;
+        }
     </style>
+<base target="_blank">
 <base target="_blank">
 <base target="_blank">
 </head>
@@ -706,6 +818,141 @@
                     <button class="listen-button">Escuchar Canción</button>
                 </div>
             </div>
+            <!-- Card 7 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/ZUBG5RuzKs02ufcHbB', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Hace Tiempo" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=HACE+TIEMPO'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">Replay</h3>
+                    <p class="music-genre">Pop Urbano | Melancólico/Romántico</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/KbJtqMgHtRXCHOP0mr', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Para Ti" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=PARA+TI'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">El Problema</h3>
+                    <p class="music-genre">Pop Urbano | Alegre/Romántico</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/3OhAX4Iy04ZBH9db9D', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Remix" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=REMIX'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">Pasarla Bien</h3>
+                    <p class="music-genre">Pop Urbano | Romántico/Sensual</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/uhvojTjBkilwpcIng0', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Placer" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=PLACER'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">Una Flor</h3>
+                    <p class="music-genre">Pop Urbano | Sensual/Enérgico</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/Yf82eFxXpyP4XMzV5w', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Delete" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=DELETE'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">Porque</h3>
+                    <p class="music-genre">Pop Urbano | Melancólico</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="music-card" onclick="window.open('https://on.soundcloud.com/Api4xd2oUc85b8xNJZ', '_blank')">
+                <div class="music-card-image-container">
+                    <img src="img/covers/2.webp" alt="Como Hago" class="music-card-image" onerror="this.src='https://via.placeholder.com/400x400/0066FF/ffffff?text=COMO+HAGO'">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music-card-content">
+                    <h3 class="music-title">Inolvidable</h3>
+                    <p class="music-genre">Pop Urbano | Melancólico/Romántico</p>
+                    <button class="listen-button">Escuchar Canción</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Artists Section - DOS CARDS CON AVATAR CIRCULAR -->
+    <section class="artists-section">
+        <h2 class="section-title">NUESTROS EQUIPO</h2>
+        <div class="artists-grid">
+            <!-- Artist 1 -->
+            <div class="artist-card" >
+                <img src="img/artistas/foto-perfil.webp" style="background-color: #ffffff
+                ;" alt="Artista 1" class="artist-avatar" onerror="this.src='https://via.placeholder.com/160x160/333/ffffff?text=ARTISTA+1'">
+                <h3 class="artist-name">JanuFlow</h3>
+                <p class="artist-role">Songwriter & Music Producer</p>
+                <p class="artist-desc">Compositor con 10 años en R&B, Pop Urbano y Balada. Arquitecto de canciones: narrativa, lírica y melodías listas para estudio. Maquetas flexibles para que el artista las haga suyas. Madurez y precisión de una década de oficio.
+
+
+
+                </p>
+                <a href="https://instagram.com/januflow" target="_blank" class="artist-instagram-btn">
+                    <i class="fab fa-instagram"></i> Seguir en Instagram
+                </a>
+            </div>
+
+            <!-- Artist 2 -->
+            <div class="artist-card">
+                <img src="img/artistas/angelx.png" alt="Artista 2" class="artist-avatar" onerror="this.src='https://via.placeholder.com/160x160/333/ffffff?text=ARTISTA+2'">
+                <h3 class="artist-name">AngelX</h3>
+                <p class="artist-role">Songwriter & Music Producerr</p>
+                <p class="artist-desc">10 años construyendo canciones que conectan. R&B, Pop Urbano y Balada. Melodías listas para estudio, letras con alma. Maquetas diseñadas para que sean tuyas, no mías. El oficio de saber qué queda y qué duele.</p>
+                <a href="https://instagram.com/angelx" target="_blank" class="artist-instagram-btn">
+                    <i class="fab fa-instagram"></i> Seguir en Instagram
+                </a>
+            </div>
         </div>
     </section>
 
@@ -751,6 +998,10 @@
                 <!-- TikTok agregado -->
                 <a href="https://tiktok.com/@dinastiafresca" target="_blank" class="social-link" title="TikTok">
                     <i class="fab fa-tiktok"></i>
+                </a>
+                <!-- YouTube agregado -->
+                <a href="https://www.youtube.com/@Fresh.Dynasty" target="_blank" class="social-link" title="YouTube">
+                    <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </div>
